@@ -15,6 +15,11 @@ public class AbstractionActivity extends Activity {
         // Start here
         //
 
+        Fan myFan =new Fan();
+        Light mylight = new Light();
+
+        myFan.breakDevice();
+        mylight.breakDevice();
 
     }
 
