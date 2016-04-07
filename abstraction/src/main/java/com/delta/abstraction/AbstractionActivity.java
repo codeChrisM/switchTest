@@ -21,6 +21,15 @@ public class AbstractionActivity extends Activity {
         myFan.breakDevice();
         mylight.breakDevice();
 
+
+        Switch mySwitch = new Switch();
+
+        mySwitch.turnOnSwitchable(myFan);
+        mySwitch.turnOffSwitchable(myFan);
+
+        mySwitch.turnOnSwitchable(mylight);
+        mySwitch.turnOffSwitchable(mylight);
+
     }
 
 
