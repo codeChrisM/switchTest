@@ -24,11 +24,18 @@ public class AbstractionActivity extends Activity {
 
         Switch mySwitch = new Switch();
 
-        mySwitch.turnOnSwitchable(myFan);
-        mySwitch.turnOffSwitchable(myFan);
 
-        mySwitch.turnOnSwitchable(mylight);
-        mySwitch.turnOffSwitchable(mylight);
+        mySwitch.wireUp(myFan);
+        mySwitch.wireUp(mylight);
+
+        mySwitch.flipSwitchUp();
+        mySwitch.flipSwitchDown();
+
+        mySwitch.unwire(myFan);
+
+        mySwitch.flipSwitchUp();
+        mySwitch.flipSwitchDown();
+        mySwitch.flipSwitchUp();
 
     }
 
